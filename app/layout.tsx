@@ -33,7 +33,7 @@ export default function RootLayout({
       </head>
       <body>
         {children}
-        <footer className="py-12 text-center bg-foreground">
+        <footer className="py-12 text-center bg-background">
           <div className="flex flex-col items-center gap-4 text-gray-500 text-sm">
             <p className="flex items-center gap-2">
               <Heart size={16} className="text-red-400" />
