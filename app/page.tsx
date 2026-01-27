@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef, MouseEvent, TouchEvent } from "react";
-import { BookOpen, Type, Eraser, Expand } from "lucide-react";
+import { BookOpen, Type, Eraser, Expand, Lightbulb } from "lucide-react";
 import { cn } from "@/components/cn";
 
 export default function DyslexiaReader() {
@@ -68,7 +68,7 @@ export default function DyslexiaReader() {
 
   const toggleExpand = () => {
     setIsExpanded(!isExpanded);
-  }
+  };
   const exampleText = `Cole seu texto aqui para uma leitura mais confortável. Esta ferramenta foi desenvolvida para ajudar pessoas com dislexia a ler com mais facilidade, usando espaçamento adequado, cores suaves e uma régua de leitura que acompanha seu movimento.`;
 
   return (
@@ -88,33 +88,38 @@ export default function DyslexiaReader() {
         </div>
 
         {/* Main Content */}
-        <div className={cn("grid md:grid-cols-2 gap-6", isExpanded && "md:grid-cols-1")}>
+        <div
+          className={cn(
+            "grid md:grid-cols-2 gap-6",
+            isExpanded && "md:grid-cols-1",
+          )}
+        >
           {/* Input Section */}
 
-        {!isExpanded && (
-          <div className="bg-white rounded-2xl shadow-lg p-6">
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center gap-2">
-                <Type className="w-5 h-5 text-amber-700" />
-                <h2 className="text-xl font-semibold text-gray-800">
-                  Texto Original
-                </h2>
+          {!isExpanded && (
+            <div className="bg-white rounded-2xl shadow-lg p-6">
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center gap-2">
+                  <Type className="w-5 h-5 text-amber-700" />
+                  <h2 className="text-xl font-semibold text-gray-800">
+                    Texto Original
+                  </h2>
+                </div>
+                <button
+                  onClick={clearText}
+                  className="flex items-center gap-2 px-3 py-2 text-sm bg-red-100 text-red-700 rounded-lg hover:bg-red-200 transition-colors"
+                >
+                  <Eraser className="w-4 h-4" />
+                  Limpar
+                </button>
               </div>
-              <button
-                onClick={clearText}
-                className="flex items-center gap-2 px-3 py-2 text-sm bg-red-100 text-red-700 rounded-lg hover:bg-red-200 transition-colors"
-              >
-                <Eraser className="w-4 h-4" />
-                Limpar
-              </button>
+              <textarea
+                value={inputText}
+                onChange={(e) => setInputText(e.target.value)}
+                placeholder={exampleText}
+                className="w-full h-96 p-4 border-2 border-amber-200 rounded-xl focus:border-amber-400 focus:outline-none resize-none font-sans text-gray-700"
+              />
             </div>
-            <textarea
-              value={inputText}
-              onChange={(e) => setInputText(e.target.value)}
-              placeholder={exampleText}
-              className="w-full h-96 p-4 border-2 border-amber-200 rounded-xl focus:border-amber-400 focus:outline-none resize-none font-sans text-gray-700"
-            />
-          </div>
           )}
 
           {/* Output Section with Ruler */}
@@ -148,7 +153,6 @@ export default function DyslexiaReader() {
                 >
                   <Expand className="w-5 h-5 text-amber-700 hover:bg-amber-100" />
                 </button>
-
               </div>
             </div>
             <div
@@ -200,8 +204,11 @@ export default function DyslexiaReader() {
                 )}
               </div>
             </div>
-            <p className="text-xs text-gray-600 mt-3 text-center">
-              💡 Mova o mouse ou toque na tela para ativar a régua de leitura
+            <p className="flex items-center justify-center gap-2 text-xs text-gray-600 mt-3">
+              <Lightbulb className="w-4 h-4 text-amber-500" />
+              <span>
+                Mova o mouse ou toque na tela para ativar a régua de leitura
+              </span>
             </p>
           </div>
         </div>
